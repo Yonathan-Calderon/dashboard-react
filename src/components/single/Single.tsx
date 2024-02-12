@@ -29,13 +29,13 @@ const Single = (props: Props) => {
           <div className="topInfo">
             {props.img && <img src={props.img} alt="" />}
             <h1>{props.title}</h1>
-            <button>Update</button>
+            
           </div>
           <div className="details">
-            {Object.entries(props.info).map((item) => (
-              <div className="item" key={item[0]}>
-                <span className="itemTitle">{item[0]}</span>
-                <span className="itemValue">{item[1]}</span>
+            {Object.entries(props.info).map(([key, value]) => (
+              <div className="item" key={key}>
+                <span className="itemTitle">{key}</span>
+                <span className="itemValue">{value}</span>
               </div>
             ))}
           </div>
@@ -43,17 +43,12 @@ const Single = (props: Props) => {
         <hr />
         {props.chart && (
           <div className="chart">
-            <ResponsiveContainer width="100%" height="100%">
+            <ResponsiveContainer width="100%" height={300}>
               <LineChart
                 width={500}
                 height={300}
                 data={props.chart.data}
-                margin={{
-                  top: 5,
-                  right: 30,
-                  left: 20,
-                  bottom: 5,
-                }}
+                margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
               >
                 <XAxis dataKey="name" />
                 <YAxis />
@@ -61,6 +56,7 @@ const Single = (props: Props) => {
                 <Legend />
                 {props.chart.dataKeys.map((dataKey) => (
                   <Line
+                    key={dataKey.name}
                     type="monotone"
                     dataKey={dataKey.name}
                     stroke={dataKey.color}
@@ -75,8 +71,8 @@ const Single = (props: Props) => {
         <h2>Latest Activities</h2>
         {props.activities && (
           <ul>
-            {props.activities.map((activity) => (
-              <li key={activity.text}>
+            {props.activities.map((activity, index) => (
+              <li key={index}>
                 <div>
                   <p>{activity.text}</p>
                   <time>{activity.time}</time>

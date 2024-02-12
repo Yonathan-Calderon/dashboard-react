@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 import "./Menu.scss";
-import { menu } from "../../data";
+import { userData } from "../../data";
 
 const Menu = () => {
+  const { menu } = userData.userData; 
+
   return (
     <div className="menu">
       {menu.map((item) => (

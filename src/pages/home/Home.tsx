@@ -1,19 +1,12 @@
-import BarChartBox from "../../components/barChartBox/BarChartBox";
-import BigChartBox from "../../components/bigChartBox/BigChartBox";
+import { userData } from "../../data.ts";
 import ChartBox from "../../components/chartBox/ChartBox";
 import PieChartBox from "../../components/pieCartBox/PieChartBox";
 import TopBox from "../../components/topBox/TopBox";
-import {
-  barChartBoxRevenue,
-  barChartBoxVisit,
-  chartBoxConversion,
-  chartBoxProduct,
-  chartBoxRevenue,
-  chartBoxUser,
-} from "../../data";
 import "./home.scss";
-{/* Se instala la libreria Recharts(npm i recharts) y se van creando los componentes con el código que esta en el sitio web  */}
+
 const Home = () => {
+  const { chartBoxUser, chartBoxProduct, chartBoxConversion, chartBoxRevenue } = userData.userData; 
+
   return (
     <div className="home">
       <div className="box box1">
@@ -33,15 +26,6 @@ const Home = () => {
       </div>
       <div className="box box6">
         <ChartBox {...chartBoxRevenue} />
-      </div>
-      <div className="box box7">
-        <BigChartBox />
-      </div>
-      <div className="box box8">
-        <BarChartBox {...barChartBoxVisit} />
-      </div>
-      <div className="box box9">
-        <BarChartBox {...barChartBoxRevenue} />
       </div>
     </div>
   );

@@ -1,3 +1,4 @@
+{/* Se carga los menú para el rol usuario */}
 export const menu = [
   {
     id: 1,
@@ -17,104 +18,9 @@ export const menu = [
       },
     ],
   },
-  {
-    id: 2,
-    title: "lists",
-    listItems: [
-      {
-        id: 1,
-        title: "Users",
-        url: "/users",
-        icon: "user.svg",
-      },
-      {
-        id: 2,
-        title: "Products",
-        url: "/products",
-        icon: "product.svg",
-      },
-      {
-        id: 3,
-        title: "Orders",
-        url: "/orders",
-        icon: "order.svg",
-      },
-      {
-        id: 4,
-        title: "Posts",
-        url: "/posts",
-        icon: "post2.svg",
-      },
-    ],
-  },
-  {
-    id: 3,
-    title: "general",
-    listItems: [
-      {
-        id: 1,
-        title: "Elements",
-        url: "/",
-        icon: "element.svg",
-      },
-      {
-        id: 2,
-        title: "Notes",
-        url: "/",
-        icon: "note.svg",
-      },
-      {
-        id: 3,
-        title: "Forms",
-        url: "/",
-        icon: "form.svg",
-      },
-      {
-        id: 4,
-        title: "Calendar",
-        url: "/",
-        icon: "calendar.svg",
-      },
-    ],
-  },
-  {
-    id: 4,
-    title: "Maintenance",
-    listItems: [
-      {
-        id: 1,
-        title: "Settings",
-        url: "/",
-        icon: "setting.svg",
-      },
-      {
-        id: 2,
-        title: "Backups",
-        url: "/",
-        icon: "backup.svg",
-      },
-    ],
-  },
-  {
-    id: 5,
-    title: "analytics",
-    listItems: [
-      {
-        id: 1,
-        title: "Charts",
-        url: "/",
-        icon: "chart.svg",
-      },
-      {
-        id: 2,
-        title: "Logs",
-        url: "/",
-        icon: "log.svg",
-      },
-    ],
-  },
+  
 ];
-
+{/* Se cargan los prosprectos para el rol usuario */}
 export const topDealUsers = [
   {
     id: 1,
@@ -166,7 +72,7 @@ export const topDealUsers = [
     amount: "1.560",
   },
 ];
-
+{/* Se cargan los prosprectos en estado "Inicio - se envío cotizacion" para el rol usuario */}
 export const chartBoxUser = {
   color: "#8884d8",
   icon: "/userIcon.svg",
@@ -184,7 +90,7 @@ export const chartBoxUser = {
     { name: "Sat", users: 450 },
   ],
 };
-
+{/* Se cargan los prosprectos en estado "En progreso - se espera respuesta del prospecto" para el rol usuario */}
 export const chartBoxProduct = {
   color: "skyblue",
   icon: "/productIcon.svg",
@@ -202,6 +108,7 @@ export const chartBoxProduct = {
     { name: "Sat", products: 450 },
   ],
 };
+{/* Se cargan los prosprectos en estado "Rechazado - No le interesa" para el rol usuario */}
 export const chartBoxRevenue = {
   color: "teal",
   icon: "/revenueIcon.svg",
@@ -219,6 +126,7 @@ export const chartBoxRevenue = {
     { name: "Sat", revenue: 450 },
   ],
 };
+{/* Se cargan los prosprectos en estado "Venta Cerrada" para el rol usuario */}
 export const chartBoxConversion = {
   color: "gold",
   icon: "/conversionIcon.svg",
@@ -236,79 +144,90 @@ export const chartBoxConversion = {
     { name: "Sat", ratio: 450 },
   ],
 };
-
-export const barChartBoxRevenue = {
-  title: "Profit Earned",
-  color: "#8884d8",
-  dataKey: "profit",
-  chartData: [
+{/* Se cargan los datos del usuario para el rol usuario */}
+export const singleUser = {
+  id: 1,
+  title: "John Doe",
+  img: "https://images.pexels.com/photos/17397364/pexels-photo-17397364.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+  info: {
+    username: "Johndoe99",
+    fullname: "John Doe",
+    email: "johndoe@gmail.com",
+    phone: "123 456 789",
+    status: "verified",
+  },
+  chart: {
+    dataKeys: [
+      { name: "visits", color: "#82ca9d" },
+      { name: "clicks", color: "#8884d8" },
+    ],
+    data: [
+      {
+        name: "Sun",
+        visits: 4000,
+        clicks: 2400,
+      },
+      {
+        name: "Mon",
+        visits: 3000,
+        clicks: 1398,
+      },
+      {
+        name: "Tue",
+        visits: 2000,
+        clicks: 3800,
+      },
+      {
+        name: "Wed",
+        visits: 2780,
+        clicks: 3908,
+      },
+      {
+        name: "Thu",
+        visits: 1890,
+        clicks: 4800,
+      },
+      {
+        name: "Fri",
+        visits: 2390,
+        clicks: 3800,
+      },
+      {
+        name: "Sat",
+        visits: 3490,
+        clicks: 4300,
+      },
+    ],
+  },
+  activities: [
     {
-      name: "Sun",
-      profit: 4000,
+      text: "John Doe purchased Playstation 5 Digital Edition",
+      time: "3 day ago",
     },
     {
-      name: "Mon",
-      profit: 3000,
+      text: "John Doe added 3 items into their wishlist",
+      time: "1 week ago",
     },
     {
-      name: "Tue",
-      profit: 2000,
+      text: "John Doe purchased Sony Bravia KD-32w800",
+      time: "2 weeks ago",
     },
     {
-      name: "Wed",
-      profit: 2780,
+      text: "John Doe reviewed a product",
+      time: "1 month ago",
     },
     {
-      name: "Thu",
-      profit: 1890,
+      text: "John Doe added 1 items into their wishlist",
+      time: "1 month ago",
     },
     {
-      name: "Fri",
-      profit: 2390,
-    },
-    {
-      name: "Sat",
-      profit: 3490,
+      text: "John Doe reviewed a product",
+      time: "2 months ago",
     },
   ],
 };
 
-export const barChartBoxVisit = {
-  title: "Total Visit",
-  color: "#FF8042",
-  dataKey: "visit",
-  chartData: [
-    {
-      name: "Sun",
-      visit: 4000,
-    },
-    {
-      name: "Mon",
-      visit: 3000,
-    },
-    {
-      name: "Tue",
-      visit: 2000,
-    },
-    {
-      name: "Wed",
-      visit: 2780,
-    },
-    {
-      name: "Thu",
-      visit: 1890,
-    },
-    {
-      name: "Fri",
-      visit: 2390,
-    },
-    {
-      name: "Sat",
-      visit: 3490,
-    },
-  ],
-};
-
+{/* Chequer por el error de carga si los borro */}
 export const userRows = [
   {
     id: 1,
@@ -555,89 +474,6 @@ export const products = [
   },
 ];
 
-
-
-export const singleUser = {
-  id: 1,
-  title: "John Doe",
-  img: "https://images.pexels.com/photos/17397364/pexels-photo-17397364.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-  info: {
-    username: "Johndoe99",
-    fullname: "John Doe",
-    email: "johndoe@gmail.com",
-    phone: "123 456 789",
-    status: "verified",
-  },
-  chart: {
-    dataKeys: [
-      { name: "visits", color: "#82ca9d" },
-      { name: "clicks", color: "#8884d8" },
-    ],
-    data: [
-      {
-        name: "Sun",
-        visits: 4000,
-        clicks: 2400,
-      },
-      {
-        name: "Mon",
-        visits: 3000,
-        clicks: 1398,
-      },
-      {
-        name: "Tue",
-        visits: 2000,
-        clicks: 3800,
-      },
-      {
-        name: "Wed",
-        visits: 2780,
-        clicks: 3908,
-      },
-      {
-        name: "Thu",
-        visits: 1890,
-        clicks: 4800,
-      },
-      {
-        name: "Fri",
-        visits: 2390,
-        clicks: 3800,
-      },
-      {
-        name: "Sat",
-        visits: 3490,
-        clicks: 4300,
-      },
-    ],
-  },
-  activities: [
-    {
-      text: "John Doe purchased Playstation 5 Digital Edition",
-      time: "3 day ago",
-    },
-    {
-      text: "John Doe added 3 items into their wishlist",
-      time: "1 week ago",
-    },
-    {
-      text: "John Doe purchased Sony Bravia KD-32w800",
-      time: "2 weeks ago",
-    },
-    {
-      text: "John Doe reviewed a product",
-      time: "1 month ago",
-    },
-    {
-      text: "John Doe added 1 items into their wishlist",
-      time: "1 month ago",
-    },
-    {
-      text: "John Doe reviewed a product",
-      time: "2 months ago",
-    },
-  ],
-};
 export const singleProduct = {
   id: 1,
   title: "Playstation 5 Digital Edition",
@@ -719,3 +555,193 @@ export const singleProduct = {
     },
   ],
 };
+{/* ****************************************** */}
+
+
+{/* Mock General para cada usuario */}
+
+export const userData = {
+  "userData": {
+    "userId": 1,
+    "menu": [
+      {
+        "id": 1,
+        "title": "main",
+        "listItems": [
+          {
+            "id": 1,
+            "title": "Overview",
+            "url": "/",
+            "icon": "home.svg"
+          },
+          {
+            "id": 2,
+            "title": "Profile",
+            "url": "/users/1",
+            "icon": "user.svg"
+          }
+        ]
+      }
+    ],
+    "topDealUsers": [
+      {
+        "id": 1,
+        "img": "https://images.pexels.com/photos/8405873/pexels-photo-8405873.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+        "username": "Eva McDonald",
+        "email": "elva@gmail.com",
+        "amount": "3.668"
+      },
+      {
+        "id": 2,
+        "img": "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        "username": "Linnie Nelson",
+        "email": "linnie@gmail.com",
+        "amount": "3.256"
+      },
+      {
+        "id": 3,
+        "img": "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        "username": "Brent Reeves",
+        "email": "brent@gmail.com",
+        "amount": "2.998"
+      },
+      {
+        "id": 4,
+        "img": "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        "username": "Adeline Watson",
+        "email": "adeline@gmail.com",
+        "amount": "2.512"
+      },
+      {
+        "id": 5,
+        "img": "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        "username": "Juan Harrington",
+        "email": "juan@gmail.com",
+        "amount": "2.134"
+      },
+      {
+        "id": 6,
+        "img": "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        "username": "Augusta McGee",
+        "email": "augusta@gmail.com",
+        "amount": "1.932"
+      },
+      {
+        "id": 7,
+        "img": "https://images.pexels.com/photos/874158/pexels-photo-874158.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        "username": "Angel Thomas",
+        "email": "angel@gmail.com",
+        "amount": "1.560"
+      }
+    ],
+    "chartBoxUser": {
+      "color": "#8884d8",
+      "icon": "/userIcon.svg",
+      "title": "Total Users",
+      "number": "11.238",
+      "dataKey": "users",
+      "percentage": 45,
+      "chartData": [
+        { "name": "Sun", "users": 400 },
+        { "name": "Mon", "users": 600 },
+        { "name": "Tue", "users": 500 },
+        { "name": "Wed", "users": 700 },
+        { "name": "Thu", "users": 400 },
+        { "name": "Fri", "users": 500 },
+        { "name": "Sat", "users": 450 }
+      ]
+    },
+    "chartBoxProduct": {
+      "color": "skyblue",
+      "icon": "/productIcon.svg",
+      "title": "Total Products",
+      "number": "238",
+      "dataKey": "products",
+      "percentage": 21,
+      "chartData": [
+        { "name": "Sun", "products": 400 },
+        { "name": "Mon", "products": 600 },
+        { "name": "Tue", "products": 500 },
+        { "name": "Wed", "products": 700 },
+        { "name": "Thu", "products": 400 },
+        { "name": "Fri", "products": 500 },
+        { "name": "Sat", "products": 450 }
+      ]
+    },
+    "chartBoxRevenue": {
+      "color": "teal",
+      "icon": "/revenueIcon.svg",
+      "title": "Total Revenue",
+      "number": "$56.432",
+      "dataKey": "revenue",
+      "percentage": -12,
+      "chartData": [
+        { "name": "Sun", "revenue": 400 },
+        { "name": "Mon", "revenue": 600 },
+        { "name": "Tue", "revenue": 500 },
+        { "name": "Wed", "revenue": 700 },
+        { "name": "Thu", "revenue": 400 },
+        { "name": "Fri", "revenue": 500 },
+        { "name": "Sat", "revenue": 450 }
+      ]
+    },
+    "chartBoxConversion": {
+      "color": "gold",
+      "icon": "/conversionIcon.svg",
+      "title": "Total Ratio",
+      "number": "2.6",
+      "dataKey": "ratio",
+      "percentage": 12,
+      "chartData": [
+        { "name": "Sun", "ratio": 400 },
+        { "name": "Mon", "ratio": 600 },
+        { "name": "Tue", "ratio": 500 },
+        { "name": "Wed", "ratio": 700 },
+        { "name": "Thu", "ratio": 400 },
+        { "name": "Fri", "ratio": 500 },
+        { "name": "Sat", "ratio": 450 }
+      ]
+    },
+    "singleUser": {
+      "id": 1,
+      "title": "John Doe",
+      "img": "https://images.pexels.com/photos/17397364/pexels-photo-17397364.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+      "info": {
+        "username": "Johndoe",
+        "fullname": "John Doe",
+        "email": "johndoe@gmail.com",
+        "phone": "123 456 789",
+        "status": "verified"
+      },
+      "chart": {
+        "dataKeys": [
+          { "name": "visits", "color": "#82ca9d" },
+          { "name": "clicks", "color": "#8884d8" }
+        ],
+        "data": [
+          { "name": "Sun", "visits": 4000, "clicks": 2400 },
+          { "name": "Mon", "visits": 3000, "clicks": 1398 },
+          { "name": "Tue", "visits": 2000, "clicks": 3800 },
+          { "name": "Wed", "visits": 2780, "clicks": 3908 },
+          { "name": "Thu", "visits": 1890, "clicks": 4800 },
+          { "name": "Fri", "visits": 2390, "clicks": 3800 },
+          { "name": "Sat", "visits": 3490, "clicks": 4300 }
+        ]
+      },
+      "activities": [
+        { "text": "John Doe purchased Playstation 5 Digital Edition", "time": "3 day ago" },
+        { "text": "John Doe added 3 items into their wishlist", "time": "1 week ago" },
+        { "text": "John Doe purchased Sony Bravia KD-32w800", "time": "2 weeks ago" },
+        { "text": "John Doe reviewed a product", "time": "1 month ago" },
+        { "text": "John Doe added 1 items into their wishlist", "time": "1 month ago" },
+        { "text": "John Doe reviewed a product", "time": "2 months ago" }
+      ]
+    },
+    "leadsBySource": [
+      { "name": "Mobile", "value": 400, "color": "#0088FE" },
+      { "name": "Desktop", "value": 300, "color": "#00C49F" },
+      { "name": "Laptop", "value": 300, "color": "#FFBB28" },
+      { "name": "Tablet", "value": 200, "color": "#FF8042" }
+    ]
+  }
+}

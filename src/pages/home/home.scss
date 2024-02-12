@@ -37,12 +37,17 @@
     grid-column: span 1;
     grid-row: span 3;
   }
-  .box7 {
-    grid-column: span 2;
-    grid-row: span 2;
 
-    @include md {
-      display: none;
-    }
+  .box5 {
+    grid-column: span 1;
+    grid-row: span 2;
+    max-height: 400px;
   }
+
+  .box6 {
+    grid-column: span 1;
+    grid-row: span 2;
+    max-height: 400px;
+  }
+  
 }
