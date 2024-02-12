@@ -1,0 +1,34 @@
+*****DashBoard********
+*Creación del proyecto con Vite usando TypeScript.
+++++
+*Creación de secciones comunes, header, footer.
+++++
+*Para crear el menú hizo un archivo data.ts para todos los elementos del menú, entonces
+importó el archivo e hizo un map de esos elementos.
+
+36:01
++++
+**Para el componente Home.tsx, uso grid, dando diferentes dimensiones a los div "box".
++++
+**Para los gráficos uso Recharts. para instalar la libreria hay que ejecutar el comando:
+npm i rechats.
++++
+**Después se copian los elementos que estan en el sitio web, como cualquier otra libreria.
++++
+**Para la parte de la lista del componente Users.tsx, se uso la librería material UI. Para no tener que hacer la tabla de la lista.
+**Se usa el componente de material UI DataGrid, se instala la libreria. Se puede instalar solamente el data grid o todo la libreria entera.
+**Se define el componente DataTable que utiliza el componente DataGrid de Material-UI para renderizar una tabla de datos.
+**Para agregar elementos se modifica los datos que estan en DataTable.
++++
+**Después del renderizado de los Users, se agrega la funcionalidad para agregar nuevos Users.
+**Esta funcionalidad no esta terminada, al igual que la parte editar y eliminar.
++++
+**El componente de los productos se hizo una maquetación.
++++
+**Se hizo un test con una api que esta en la descripción del proyecto.
+
+
+
+
+
+
