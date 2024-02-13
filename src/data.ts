@@ -635,10 +635,10 @@ export const userData = {
       }
     ],
     "chartBoxUser": {
-      "color": "#8884d8",
-      "icon": "/userIcon.svg",
-      "title": "Total Users",
-      "number": "11.238",
+      "color": "#0ea5e9",
+      "icon": "/productIcon.svg",
+      "title": "Quotation Sent",
+      "number": "121",
       "dataKey": "users",
       "percentage": 45,
       "chartData": [
@@ -652,9 +652,9 @@ export const userData = {
       ]
     },
     "chartBoxProduct": {
-      "color": "skyblue",
-      "icon": "/productIcon.svg",
-      "title": "Total Products",
+      "color": "#ffc107",
+      "icon": "/conversionIcon.svg",
+      "title": "In Progress",
       "number": "238",
       "dataKey": "products",
       "percentage": 21,
@@ -669,10 +669,10 @@ export const userData = {
       ]
     },
     "chartBoxRevenue": {
-      "color": "teal",
+      "color": "#38a169",
       "icon": "/revenueIcon.svg",
-      "title": "Total Revenue",
-      "number": "$56.432",
+      "title": "Closed Sale",
+      "number": "220",
       "dataKey": "revenue",
       "percentage": -12,
       "chartData": [
@@ -686,10 +686,10 @@ export const userData = {
       ]
     },
     "chartBoxConversion": {
-      "color": "gold",
-      "icon": "/conversionIcon.svg",
-      "title": "Total Ratio",
-      "number": "2.6",
+      "color": "#dc3545",
+      "icon": "/delete.svg",
+      "title": "Rejected",
+      "number": "15",
       "dataKey": "ratio",
       "percentage": 12,
       "chartData": [
@@ -738,10 +738,10 @@ export const userData = {
       ]
     },
     "leadsBySource": [
-      { "name": "Mobile", "value": 400, "color": "#0088FE" },
-      { "name": "Desktop", "value": 300, "color": "#00C49F" },
-      { "name": "Laptop", "value": 300, "color": "#FFBB28" },
-      { "name": "Tablet", "value": 200, "color": "#FF8042" }
+      { "name": "Quotation Sent", "value": 400, "color": "#0ea5e9" },
+      { "name": "In Progress", "value": 300, "color": "#ffc107" },
+      { "name": "Rejected", "value": 300, "color": "#dc3545" },
+      { "name": "Closed Sale", "value": 200, "color": "#38a169" }
     ]
   }
 }

@@ -19,16 +19,16 @@ const ChartBox = (props: Props) => {
   let data = null;
 
   switch (props.title) {
-    case "Total Users":
+    case "Quotation Sent":
       data = chartBoxUser;
       break;
-    case "Total Products":
+    case "In Progress":
       data = chartBoxProduct;
       break;
-    case "Total Revenue":
+    case "Closed Sale":
       data = chartBoxRevenue;
       break;
-    case "Total Ratio":
+    case "Rejected":
       data = chartBoxConversion;
       break;
     default:

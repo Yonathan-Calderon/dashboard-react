@@ -1,8 +1,8 @@
 import "./topBox.scss";
-import { userData } from "../../data.ts"; // Importa el objeto userData
+import { userData } from "../../data.ts"; 
 
 const TopBox = () => {
-  const { topDealUsers } = userData.userData; // Accede a la lista de topDealUsers dentro de userData
+  const { topDealUsers } = userData.userData; 
 
   return (
     <div className="topBox">
