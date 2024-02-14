@@ -1,3 +1,4 @@
+
 import {
   Legend,
   Line,
@@ -87,3 +88,4 @@ const Single = (props: Props) => {
 };
 
 export default Single;
+
