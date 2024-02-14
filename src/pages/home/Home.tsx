@@ -5,7 +5,7 @@ import TopBox from "../../components/topBox/TopBox";
 import "./home.scss";
 
 const Home = () => {
-  const { chartBoxUser, chartBoxProduct, chartBoxConversion, chartBoxRevenue } = userData.userData; 
+  const { QuotationSent, InProgress, ClosedSale, Rejected } = userData.userData; 
 
   return (
     <div className="home">
@@ -13,19 +13,19 @@ const Home = () => {
         <TopBox />
       </div>
       <div className="box box2">
-        <ChartBox {...chartBoxUser} />
+        <ChartBox {...QuotationSent} />
       </div>
       <div className="box box3">
-        <ChartBox {...chartBoxProduct} />
+        <ChartBox {...InProgress} />
       </div>
       <div className="box box4">
         <PieChartBox />
       </div>
       <div className="box box5">
-        <ChartBox {...chartBoxConversion} />
+        <ChartBox {...Rejected} />
       </div>
       <div className="box box6">
-        <ChartBox {...chartBoxRevenue} />
+        <ChartBox {...ClosedSale} />
       </div>
     </div>
   );

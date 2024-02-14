@@ -41,7 +41,7 @@ function App() {
       element: <Layout />,
       children: [
         {
-          path: "/",
+          path: "/:id",
           element: <Home />,
         },
         {

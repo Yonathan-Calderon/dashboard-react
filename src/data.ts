@@ -8,7 +8,7 @@ export const menu = [
         id: 1,
         title: "Homepage",
         url: "/",
-        icon: "home.svg",
+        icon: "/home.svg",
       },
       {
         id: 2,
@@ -562,7 +562,10 @@ export const singleProduct = {
 
 export const userData = {
   "userData": {
+    "userName": "UserTest",
     "userId": 1,
+    "rol": "user",
+    "listProspectSellers": "Prospects",
     "menu": [
       {
         "id": 1,
@@ -571,19 +574,19 @@ export const userData = {
           {
             "id": 1,
             "title": "Overview",
-            "url": "/",
-            "icon": "home.svg"
+            "url": "/1",
+            "icon": "../home.svg"
           },
           {
             "id": 2,
             "title": "Profile",
             "url": "/users/1",
-            "icon": "user.svg"
+            "icon": "../user.svg"
           }
         ]
       }
     ],
-    "topDealUsers": [
+    "listProspectsSellers": [
       {
         "id": 1,
         "img": "https://images.pexels.com/photos/8405873/pexels-photo-8405873.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
@@ -634,7 +637,7 @@ export const userData = {
         "amount": "1.560"
       }
     ],
-    "chartBoxUser": {
+    "QuotationSent": {
       "color": "#0ea5e9",
       "icon": "/productIcon.svg",
       "title": "Quotation Sent",
@@ -651,7 +654,7 @@ export const userData = {
         { "name": "Sat", "users": 450 }
       ]
     },
-    "chartBoxProduct": {
+    "InProgress": {
       "color": "#ffc107",
       "icon": "/conversionIcon.svg",
       "title": "In Progress",
@@ -668,7 +671,7 @@ export const userData = {
         { "name": "Sat", "products": 450 }
       ]
     },
-    "chartBoxRevenue": {
+    "ClosedSale": {
       "color": "#38a169",
       "icon": "/revenueIcon.svg",
       "title": "Closed Sale",
@@ -685,7 +688,7 @@ export const userData = {
         { "name": "Sat", "revenue": 450 }
       ]
     },
-    "chartBoxConversion": {
+    "Rejected": {
       "color": "#dc3545",
       "icon": "/delete.svg",
       "title": "Rejected",
@@ -729,7 +732,7 @@ export const userData = {
         ]
       },
       "activities": [
-        { "text": "John Doe purchased Playstation 5 Digital Edition", "time": "3 day ago" },
+        { "text": "John Doe purchased Playstation 5 Digital Edition", "time": "4 day ago" },
         { "text": "John Doe added 3 items into their wishlist", "time": "1 week ago" },
         { "text": "John Doe purchased Sony Bravia KD-32w800", "time": "2 weeks ago" },
         { "text": "John Doe reviewed a product", "time": "1 month ago" },

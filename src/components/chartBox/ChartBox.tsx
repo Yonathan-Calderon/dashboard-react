@@ -14,22 +14,22 @@ type Props = {
 };
 
 const ChartBox = (props: Props) => {
-  const { chartBoxUser, chartBoxProduct, chartBoxConversion, chartBoxRevenue } = userData.userData;
+  const { QuotationSent, InProgress, ClosedSale, Rejected } = userData.userData;
 
   let data = null;
 
   switch (props.title) {
     case "Quotation Sent":
-      data = chartBoxUser;
+      data = QuotationSent;
       break;
     case "In Progress":
-      data = chartBoxProduct;
+      data = InProgress;
       break;
     case "Closed Sale":
-      data = chartBoxRevenue;
+      data = ClosedSale;
       break;
     case "Rejected":
-      data = chartBoxConversion;
+      data = Rejected;
       break;
     default:
       

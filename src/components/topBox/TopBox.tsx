@@ -2,13 +2,13 @@ import "./topBox.scss";
 import { userData } from "../../data.ts"; 
 
 const TopBox = () => {
-  const { topDealUsers } = userData.userData; 
+  const { listProspectsSellers, listProspectSellers } = userData.userData; 
 
   return (
     <div className="topBox">
-      <h1>Prospects</h1>
+      <h1>{listProspectSellers}</h1>
       <div className="list">
-        {topDealUsers.map((user) => (
+        {listProspectsSellers.map((user) => (
           <div className="listItem" key={user.id}>
             <div className="user">
               <img src={user.img} alt="" />
